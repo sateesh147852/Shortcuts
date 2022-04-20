@@ -1,0 +1,35 @@
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="settings"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:shortcutShortLabel="@string/settings"
+        android:shortcutLongLabel="@string/settings"
+        android:shortcutDisabledMessage="@string/settings">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.shortcuts"
+            android:targetClass="com.shortcuts.SettingsActivity" />
+        <!-- If your shortcut is associated with multiple intents, include them
+             here. The last intent in the list determines what the user sees when
+             they launch this shortcut. -->
+        <!--<categories android:name="android.shortcut.conversation" />
+        <capability-binding android:key="actions.intent.CREATE_MESSAGE" />-->
+    </shortcut>
+    <!-- Specify more shortcuts here. -->
+
+
+    <shortcut
+        android:shortcutId="profile"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_profile_24"
+        android:shortcutShortLabel="@string/profile"
+        android:shortcutLongLabel="@string/profile"
+        android:shortcutDisabledMessage="@string/profile">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.shortcuts"
+            android:targetClass="com.shortcuts.ProfileActivity" />
+    </shortcut>
+
+</shortcuts>
